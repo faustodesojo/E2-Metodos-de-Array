@@ -73,7 +73,7 @@ pizzas.forEach(pizza =>console.log("La " + pizza.nombre + " tiene un valor de $"
 console.log("---- Consigna d ----");
 
 pizzas.forEach((pizza)=> {
-  console.log("La " + pizza.nombre + " tiene :");
+  console.log("Los ingredientes de la " + pizza.nombre + " son :");
   pizza.ingredientes.forEach((ingrediente)=>{
     console.log(ingrediente)
   })
