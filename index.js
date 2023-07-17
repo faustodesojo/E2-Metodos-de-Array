@@ -60,8 +60,15 @@ idImpar.forEach(pizza => console.log(pizza.nombre));
 console.log("---- Consigna b ----");
 
 
-const menosDe600 = pizzas.some((pizza) => pizza.precio < 600);
-console.log(menosDe600);
+const menosDe600 = pizzas.some((pizza) => {
+  if (pizza.precio < 600) {
+    console.log("Sí, hay pizzas con precio menor a 600.");
+    return true;
+  }
+});
+
+
+
 
 
 console.log("---- Consigna c ----");
